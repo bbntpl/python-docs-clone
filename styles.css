@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Allerta&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400&display=swap');
+:root{
+  --color-gray: rgb(30,30,30);
+  --color-dark-purple: #121228;
+}
+section{
+    padding-right: 25px;
+}
+body{
+  background-color: var(--color-gray);
+  color: rgb(151, 150, 150);
+  font-family: Source Sans Pro, sans-serif;
+}
+#container{
+    display: flex;
+    flex-flow: row;
+}
+#navbar {
+  min-width: 290px;
+  top: 0px;
+  left: 0px;
+  width: 300px;
+  height: 100%;
+  background: #111; 
+}
+#navbar > header{
+  font-size:2em;
+  text-align: center;
+}
+#navbar > ul{
+  padding-right: 22px;
+  list-style: none;
+}
+a{
+  text-decoration: none;
+  color: #3ea49d;
+  
+}
+a:hover{
+  text-decoration: none;
+  color: #24c0d9;
+  
+}
+#nav > li> a{
+  display:block; 
+  color: #a1a0a0; 
+  text-decoration: none;
+  padding: 0.8em 0em;
+  text-transform: uppercase;
+  font-size: 120%;
+  letter-spacing: 2px;
+  text-shadow: 0 -1.1px 0 #000;
+  position: relative;
+}
+#nav > li > a:hover{
+  color: #f1f1f1; 
+}
+#nav > li{
+  list-style: none;
+}
+#nav > li> ul{
+  border: 1px solid;
+}
+#nav > li> ul > li > a{
+  display:block; 
+  color: #818181; 
+  text-decoration: none;
+  padding: 0.8em 0em;
+  text-transform: uppercase;
+  font-size: 80%;
+  letter-spacing: 2px;
+  text-shadow: 0 -1.1px 0 #000;
+  position: relative;
+}
+#nav > li > ul > li{
+  list-style: none;
+}
+#nav > li> ul > li > a:hover{
+  color: #f1f1f1; 
+}
+#main-doc {
+  position: absolute;
+  padding: 25px;
+  margin-bottom: 110px;
+}
+#main-doc > h1{
+  text-align: right;
+  border-bottom: 1px solid rgba(255,255,255, 0.5);
+  color: aliceblue;
+}
+header{ /*title of articles*/
+  padding: 2rem 0 1rem 0;
+  font-size: 1.5em;
+  color: rgba(255,255,255,0.75);
+}
+strong{ /*diff font, hacking-font-esque style*/
+  font-family: Allerta, sans-serif;
+  font-weight: lighter;
+}
+code{ 
+  display: block;
+  text-align: left;
+  white-space: pre;
+  position: relative;
+  word-break: normal;
+  word-wrap: normal;
+  line-height: 2;
+  background-color:var(--color-dark-purple);
+  padding: 15px;
+  margin: 10px;
+  border-radius: 5px;
+}
+@media only screen and (max-width: 815px) {
+  /* For mobile phones: */
+  #navbar {
+      display: none;
+  }
+}
+.warning-desc{ /*thick border*/
+  border: thick double rgba(255,255,255, 0.5);
+  padding: 10px;
+}
+.note-desc{ /*thin top and bottom border*/
+  border-top: 1px solid white;
+  border-bottom: 1px solid white;
+  background: linear-gradient(#1e0326, #9023b4);
+  padding: 0 25px;
+}
