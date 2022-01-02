@@ -1,0 +1,931 @@
+<!-- Started working on 10/31/20 01:51 EST -->
+<!-- Approximately 11.5 hours -->
+<!-- Finished website at 11/01/20 08:21 EST -->
+
+<head>
+    <meta charset="UTF-8" />
+    <link href="styles.css" rel="stylesheet" type="text/css" media="all" />
+    <title>Python Chapter 1 Documentation Page</title>
+</head>
+<div id="container">
+    <nav id="navbar">
+        <header>Python Documentation</header>
+        <ul id="nav">
+            <li><a class="nav-link" href="#Beginning_with_Python">Beginning with Python</a>
+                <ul>
+                    <li><a class="nav-link" href="#Context">Context</a></li>
+                    <li><a class="nav-link" href="#Low-Level_and_High-Level_Computer_Operations">Low-Level and
+                            High-Level Computer Operations</a></li>
+                    <li><a class="nav-link" href="#Why_Python">Why Python</a></li>
+                    <li><a class="nav-link" href="#Obtaining_Python_for_Your_Computer">Obtaining Python for Your
+                            Computer</a></li>
+                    <li><a class="nav-link"
+                            href="#Philosophy_and_Implementation_of_the_Hands-On_Python_Tutorials">Philosophy and
+                            Implementation of the Hands-On Python Tutorials</a></li>
+                    <li><a class="nav-link" href="#Using_the_Tutorial_-_Text_and_Video">Using the Tutorial - Text and
+                            Video</a></li>
+                    <li><a class="nav-link" href="#Learning_to_Problem-Solve">Learning to Problem-Solve</a></li>
+                </ul>
+            </li>
+            <li><a class="nav-link" href="#The_Python_Interpreter_and_Idle">The Python Interpreter and Idle</a>
+                <ul>
+                    <li><a class="nav-link" href="#Your_Python_Folder_and_Python_Examples">Your Python Folder and Python
+                            Examples</a></li>
+                    <li><a class="nav-link" href="#Folder_For_My_Examples">Folder For My Examples</a></li>
+                    <li><a class="nav-link" href="#Running_A_Sample_Program">Running A Sample Program</a></li>
+                    <li><a class="nav-link" href="#A_Sample_Program,_Explained">A Sample Program, Explained</a></li>
+                    <li><a class="nav-link" href="#Starting_Idle">Starting Idle</a></li>
+                    <li><a class="nav-link" href="#Windows_in_Idle">Windows in Idle</a></li>
+                </ul>
+            </li>
+            <li><a class="nav-link" href="#Whirlwind_Introduction_To_Types_and_Functions">Whirlwind Introduction To
+                    Types and Functions</a></li>
+            <li><a class="nav-link" href="#Integer_Arithmetic">Integer Arithmetic</a>
+                <ul>
+                    <li><a class="nav-link" href="#Addition_and_Subtraction">Addition and Subtraction</a></li>
+                    <li><a class="nav-link" href="#Multiplication,_Parentheses,_and_Precedence">Multiplication,
+                            Parentheses, and Precedence</a></li>
+                    <li><a class="nav-link" href="#Division_and_Remainders">Division and Remainders</a></li>
+                </ul>
+            </li>
+            <li><a class="nav-link" href="#Strings"> Strings</a>
+                <ul>
+                    <li><a class="nav-link" href="#String_Delimiters">String Delimiters</a></li>
+                    <li><a class="nav-link" href="#String_Concatenation">String Concatenation</a></li>
+                </ul>
+            </li>
+            <li><a class="nav-link" href="#References">References</a></li>
+        </ul>
+    </nav>
+    <div id="main-contents">
+        <main id="main-doc">
+            <h1 id="Beginning_with_Python">Beginning with Python</h1>
+            <section class="main-section" id="Context">
+                <header>Context</header>
+                <article>
+                    <p>You have probably used computers to do all sorts of useful and interesting things. In each
+                        application, the computer responds in different ways to your input, from the keyboard, mouse or
+                        a file. Still the underlying operations are determined by the design of the program you are
+                        given. In this set of tutorials you will learn to write your own computer programs, so you can
+                        give the computer instructions to react in the way you want.</p>
+                </article>
+            </section>
+            <section class="main-section" id="Low-Level_and_High-Level_Computer_Operations">
+                <header>Low-Level and High-Level Computer Operations</header>
+                <article>
+                    <p>First let us place Python programming in the context of the computer hardware. At the most
+                        fundamental level in thecomputer there are instructions built into the hardware. These are very
+                        simple instructions, peculiar to the hardwareof your particular type of computer. The
+                        instructions are designed to be simple for the hardware to execute, not forhumans to follow. The
+                        earliest programming was done with such instructions. If was difficult and error-prone. A major
+                        advance was the development of higher-level languages and translators for them. Higher-level
+                        languages allowcomputer programmers to write instructions in a format that is easier for humans
+                        to understand. For example</p>
+                    <ul>
+                        <li style="list-style: none;">z = x+y</li>
+                    </ul>
+                    <p>is an instruction in many high-level languages that means something like:</p>
+                    <ol>
+                        <li>Access the value stored at a location labeled x.</li>
+                        <li>Calculate the sum of this value and the value stored at a location labeled y.</li>
+                        <li>Store the result in a location labeled z.</li>
+                    </ol>
+                    <p>No computer understands the high-level instruction directly; it is not inmachine language. A
+                        special program mustfirst translate instructions like this one into machine language. This one
+                        high-level instruction might be translated intoa sequence of three machine language instructions
+                        corresponding to the three step description above:</p>
+                    <code>
+              0000010010000001
+              0000000010000010
+              0000010110000011
+            </code>
+                    <p>Obviously high-level languages were a great advance in clarity!</p>
+                    <p>If you follow a broad introduction to computing, you will learn more about the layers that
+                        connect low-level digitalcomputer circuits to high-level languages.</p>
+                </article>
+            </section>
+            <section class="main-section" id="Why_Python">
+                <header>Why Python</header>
+                <article>
+                    <p>There are many high-level languages. The language you will be learning is Python. Python is one
+                        of the easiestlanguages to learn and use, while at the same time being very powerful: It is one
+                        of the most used languages byhighly productive professional programmers. Also Python is a free
+                        language! If you have your own computer, youcan download it from the Internet...
+                    </p>
+                </article>
+            </section>
+            <section class="main-section" id="Obtaining_Python_for_Your_Computer">
+                <header>Obtaining Python for Your Computer</header>
+                <article>
+                    <p>
+                        Even if you have Python on your own computer, you may well not have the latest version.</p>
+                    <p>If you think you already have a current Python set to go, then try starting Idle:<a
+                            class="nav-link" href="#Starting_Idle"> Starting Idle </a>(page 11). If Idle starts,see if
+                        the version stated near the top of its window matches the latest version of Python, then fine!
+                    </p>
+                    <p>Otherwise, if you are using Windows or a Mac, see the Appendices (page 187) for instructions for
+                        individual operatingsystems.
+                    </p>
+                    <p>
+                        <b>Linux </b> An older version of Python is generally installed, and even if a current version,
+                        3.1+, is installed, Idle is install, something like ‘idle-python’ (the name in the Ubuntu
+                        distribution).
+                    </p>
+                </article>
+            </section>
+            <section class="main-content" id="Philosophy_and_Implementation_of_the_Hands-On_Python_Tutorials">
+                <header> Philosophy and Implementation of the Hands-On Python Tutorials</header>
+                <article>
+                    <p>Although Python is a high-level language, it is <i>not</i> English or some other natural human
+                        language. The Pythontranslator does not understand “add the numbers two and three”. Python is a
+                        formal language with its own specificrules and formats, which these tutorials will introduce
+                        gradually, at a pace intended for a beginner. These tutorials arealso appropriate for beginners
+                        because they gradually introduce fundamental logical programming skills. Learning these skills
+                        will allow you to much more easily program in other languages besides Python. Some of the skills
+                        you will learn are</p>
+                    <ul>
+                        <li>breaking down problems into manageable parts</li>
+                        <li>building up creative solutions</li>
+                        <li>making sure the solutions are clear for humans</li>
+                        <li>making sure the solutions also work correctly on the computer.</li>
+                    </ul>
+                    <p>Guiding Principals for the Hands-on Python Tutorials:</p>
+                    <ul>
+                        <li>The best way to learn is by active participation. Information is principally introduced in
+                            small quantities, whereyour active participation, experiencing Python, is assumed. In many
+                            place you will only be able to see whatPython does by doing it yourself (in a hands-on
+                            fashion). The tutorial will often not show. Among the mostcommon and important words in the
+                            tutorial are “Try this:”</li>
+                        <li>Other requests are for more creative responses. Sometimes there are Hints, which end up as
+                            hyperlinks in theweb page version, and footnote references in the pdf version. Both formats
+                            should encourage you to thinkactively about your response first before looking up the hint.
+                            The tutorials also provide labeled exercises, forfurther practice, without immediate answers
+                            provided. The exercises are labeled at three levels</li>
+                        <p><b>No label</b> Immediate reinforcement of basic ideas - <i>preferably do on your first
+                                pass</i>.</p>
+                        <p>* Important and more substantial - be sure you can end up doing these. Allow time to do them!
+                        </p>
+                        <p>** Most creative</p>
+                        <li>Information is introduced in an order that gives you what you need as soon as possible. The
+                            information ispresented in context. Complexity and intricacy that is not immediately needed
+                            is delayed until later, when you are more experienced.</li>
+                        <li>In many places there <i>are</i> complications thatareimportant in the beginning, because
+                            there is acommonerrorcaused by a slight misuse of the current topic. If such a <i>common</i>
+                            error is likely to make no sense and slow youdown, more information is given to allow you to
+                            head off or easily react to such an error.</li>
+                    </ul>
+                    <p>Although this approach is an effective way to introduce material, it is not so good for
+                        reference. Referencing isaddressed in several ways:</p>
+                    <ul>
+                        <li> Detailed Table of Contents</li>
+                        <li> Extensive Index in the web page version</li>
+                        <li> Flexible Search Engine built into the html version (does <i>not</i> work on an html version
+                            that you download to your computer)</li>
+                        <li>Cross references to sections that elaborate on an introductory section. Hyperlinks allow you
+                            to jump betweenthe referenced parts in the html version or the pdf version viewed on a
+                            computer. The pdf version also givespage references.</li>
+                        <li>Concise chapter summaries, grouping logically related items, even if that does not match the
+                            order of introduc-tion.</li>
+                    </ul>
+                </article>
+            </section>
+            <section class="main-section" id="Using_the_Tutorial_-_Text_and_Video">
+                <header>Using the Tutorial - Text and Video</header>
+                <article>
+                    <p>The Hands-on Python Tutorial was originally a document to read, with both the html version and a
+                        pdf version. Evenif you do not print it, some people use the pdf version online, preferring its
+                        formatting to the formatting in the htmlversion.</p>
+                    <p>Some people learn better visually and verbally from the very beginning. The Tutorial has videos
+                        for many sections.</p>
+                    <p> Also mentioned for the convenience of my Comp 150 class are videos beyond Python, for the part
+                        of the class afterPython.</p>
+                    <p>The videos are copied into two places:</p>
+                    <ul>
+                        <li><a href="https://loyolauniversitychicago-my.sharepoint.com/personal/aharrin_luc_edu/_layouts/15/onedrive.aspx?id=%2Fpersonal%2Faharrin%5Fluc%5Fedu%2FDocuments%2FComp150&originalPath=aHR0cHM6Ly9sb3lvbGF1bml2ZXJzaXR5Y2hpY2Fnby1teS5zaGFyZXBvaW50LmNvbS86ZjovZy9wZXJzb25hbC9haGFycmluX2x1Y19lZHUvRXNGXzBFR3dubUZBcHdobW5Iak5WQWtCS3hyZlpjeVFOMXBGdC1BSzJ5cU1iUT9ydGltZT0yTWpfcW5SOTJFZw"
+                                target="_blank">OneDrive</a> . There are five zip files of videos that you can download
+                            and unzip, plus individualmp4’s for the Python Tutorial appendix sections. There is one zip
+                            file for each chapter 1-4 of the PythonTutorial and one zip file (BeyondPython.zip) for the
+                            remainder of my Comp class after the Python.</li>
+                        <p>Downloads of the parts do not need any ID. Unzip (expand) any zip file before using.</p>
+                        <li> <a href="https://drive.google.com/drive/folders/0B5WvvnDHeaIYMGE2MzU4OWEtYzQ4Zi00YzhiLTliMTItNjRjYzMyYzgyMTk2?usp=sharing"
+                                target="_blank">Google Drive</a>: You need a Google Drive/Docs login ID. If you are not
+                            already logged into Google Drive/Docs, you will needto do it when you click on the link. If
+                            you have that ID, then the advantage of Google Drive is that you canselect exactly what
+                            parts to view or download. This may not work with Internet Explorer, but it does work
+                            withFirefox, Safari or Chrome browser.</li>
+                    </ul>
+                    <p>To get the most out of the tutorial, I strongly suggest the following approach for each part:</p>
+                    <ul>
+                        <li>Watch a video if you like. They are clearly labeled by numerical section. Stop the video
+                            where I ask you to <i>think</i>. The videos hit the high points and take advantage of being
+                            able to point at specific places on the screen.They are not as recent as the current text,
+                            so they may look a bit different than the tutorial in a web page.</li>
+                        <p>Some details may only appear in the written text.</p>
+                        <p>Stop the video frequently to test things for yourself! If a new function is introduced, do
+                            not only watch the video,but try it out for yourself, including with data not in the video.
+                            In some places the written version mentions moreexamples to try.</p>
+                        <li>Whether you look at the video of a section or not, do look through a written version, either
+                            as a first pass or toreview and fill in holes from the videos. Be sure to stop and try
+                            things yourself, and see how they actually workon your computer.</li>
+                        <li> Look at the labeled exercises. You are strongly recommended to give the unstarred ones an
+                            immediate try toreinforce basic concepts. The starred ones (*) are important for a strong
+                            understanding. Do not get too far aheadin reading/watching before trying the starred
+                            exercises. Understanding earlier parts well enough to be able tosolve problems is going to
+                            either be completely necessary for understanding some later sections or at least makelater
+                            sections easier to follow and fully comprehend.</li>
+                        <li>Python provides too rich an environment to be able to show you all interrelationships
+                            immediately. That canmean errors send you in a strange (to you) direction. See the appenidix
+                            section Using Error Messages (page 187).</li>
+                    </ul>
+                    <p>Have fun and be creative, and discover your power with Python!</p>
+                </article>
+            </section>
+            <section class="main-section" id="Learning_to_Problem-Solve">
+                <header>Learning to Problem-Solve</header>
+                <article>
+                    <p>While the tutorial introduces all the topics, there is more to say about using it effectively.
+                        There is way too much detailto just absorb all at once, So what are the first things to learn?
+                    </p>
+                    <p>More important than memorizing details is having an idea of the building blocks available and how
+                        they are useful.For the most direct exercises, you might just look back over the most recent
+                        section looking for related things, but thatwill not work when you have scores of sections that
+                        might have useful parts! The basic idea of the building blocksshould be in your head. For
+                        instance, looking ahead to when you have finished the Tutorial through 1.10.4, you willwant to
+                        have these ideas very present in your head to be ready to start on the exercises:</p>
+                    <ul>
+                        <li>You can use numbers and do arithmetic.</li>
+                        <li>You can store and retrieve data using variable names and assignment statements.</li>
+                        <li>Python has many useful built-in functions that can affect the system or return results for
+                            you to use.</li>
+                        <li>You can get keyboard input from the user and print things back for the user.</li>
+                        <li>Data comes in different types, and you can convert where it makes sense.</li>
+                        <li>You can use strings and generate them in many ways: literal strings, concatenation operator
+                            (+), string formatmethod.</li>
+                    </ul>
+                    <p>Once you have an idea of the appropriate building blocks needed to solve a specific problem, then
+                        you can worryabout more details. Particularly at the beginning, you are not likely to have all
+                        the exact Python syntax for the partsof your solution nailed down! It is not important to
+                        remember it precisely, but it is important to know how to find aclear explanation efficiently:
+                        Know the location in examples or in the tutorial, or use the index, the search
+                        capacity,summaries, and/or write things in notes for yourself - as for an exam. Writing short
+                        bits down is also useful because the <i>act of writing</i> helps many people absorb what they
+                        are writing.</p>
+                    <p>As your experience increases you will get used to and remember more and more stuff, but there is
+                        always the latestidea/syntax to get used to! Your notes of what is important, but still not in
+                        immediate recall, will evolve continuously.</p>
+                    <p>This multi-tiered approach means that what you absorb should not just be an enormous collection
+                        of unstructuredfacts that you plumb through in its entirety to find a useful idea. You first
+                        need to be particularly aware of the majorheadings of useful features, and then do what you need
+                        to drill down to details as necessary.</p>
+                    <p>This approach is important in the real-world, away from Python. The world is awash with way to
+                        much informationto memorize, but you must access the information that you need to synthesize and
+                        formulate solutions/arguments ...effectively!</p>
+                    <p>Knowing all the building blocks of a solution is obviously important. Many successful holistic
+                        thinkers can do thiseffectively. In some domains a knowledge of the pieces and their
+                        relationships is enough. Programming requiresmore than this, however: It is critical to sort out
+                        the exact <i>sequence</i> in which the pieces must logically appear. Some excellent holistic
+                        thinkers have a hard time with this sequencing, and must pay extra attention when planning code.
+                        Ifyou are like this, be patient and be prepared to ask for help where needed.</p>
+                    <p>What to do <i>after</i> you finish an exercise is important, too. The natural thing
+                        psychologically, particularly if you had astruggle, is to think, “Whew, outta here!!!!”</p>
+                    <p>On something that came automatically or flowed smoothly, that is not a big deal - you will
+                        probably get it just as fastthe next time. If you had a hard time and only eventually got to
+                        success, you may be doing yourself a disservice with“Whew, outta here!!!”</p>
+                    <p>We have already mentioned how not everything is equally important, and some things are more
+                        important to keep in your head than others. The same idea applies to all the steps in solving a
+                        possibly long problem. Some parts wereeasy; some were hard; there may have been several steps.
+                        If all of that goes into your brain in one continuous streamof stuff that you remember at the
+                        same level, then you are going to leave important nuggets mixed in with an awful lotof
+                        unimportant and basically useless information. Then the information is likely to all fade into
+                        oblivion, or be next to impossible to cycle through looking for the useful nuggets. Why do the
+                        problem anyway if you are just going to buryimportant information further down in your brain?
+                    </p>
+                    <p>What is important? The most obvious thing you will need at a higher level of recall is what
+                        <i>just messed you up</i>, whatyou missed until doing this problem: After finishing the actual
+                        problem, <i>actively</i> follow up and ask yourself:</p>
+                    <ul>
+                        <li>What did I get in the end that I was missing initially? What was the connection I made?</li>
+                        <li>Does this example fit in to some larger idea/abstraction/generalization in a way that I did
+                            not see before?</li>
+                        <li>How am I going to look at this so I can make a similar connection in a similar (or maybe
+                            only partly similar)problem?</li>
+                        <li>Is there a kernel here that I can think of as a new tool in my bag of tricks?</li>
+                    </ul>
+                    <p>Your answers to these questions are the most important things to take away from your recent hard
+                        work. The extraconsideration puts them more in the “priority” part of your brain, so you can
+                        really learn from your effort. When youneed the important ideas next, you do not need to play
+                        through all the details of the stuff you did to solve the earlierproblem.</p>
+                    <p>Keep coming back to this section and check up on your process: It is really important.</p>
+                </article>
+            </section>
+            <h1 id="The_Python_Interpreter_and_Idle">The Python Interpreter and Idle</h1>
+            <section class="main-secion" id="Your_Python_Folder_and_Python_Examples">
+                <header>Your Python Folder and Python Examples</header>
+                <article>
+                    <p>First you need to set up a location to store your work and the example programs from this
+                        tutorial. You can put thefolder for your Python programs most anywhere you like. However, for
+                        Chapter 4, it will be important that <i>none ofthe directories leading down to your Python
+                            folder contain any blanks in them</i>, in particular your home folder.</p>
+                    <p>The normal place for you to have my examples folder is under your home folder, which has the same
+                        name as yourLogin ID. If you are just creating a login ID, it will save some hassle in Chapter
+                        4, if your login ID doesnot have aspace in it. “Andy” or “anh” or AndyHarrington” would be fine
+                        for me, but <b>“Andy Harrington”</b> would bomb the server in Chapter 4. It is possible to do
+                        Chapter 4 with a folder outside your home folder, as discussedat the beginning of Chapter 4.</p>
+                </article>
+            </section>
+            <section class="main-content" id="Folder_For_My_Examples">
+                <header>Folder For My Examples</header>
+                <article>
+                    <p>Download and save <a href="http://anh.cs.luc.edu/python/hands-on/3.1/examples.zip."
+                            target="_blank">http://anh.cs.luc.edu/python/hands-on/3.1/examples.zip.</a></p>
+                    <p>Note that the examples, like this version of the tutorial, are for Python 3. There were major
+                        changes to Python inversion 3.0, making it incompatible with earlier versions.</p>
+                    <p>If you are using Python version 2.7 for some good reason, you should continue with the older
+                        version of the tutorial.Go to <a href="http://anh.cs.luc.edu/python/hands-on"
+                            target="_blank">http://anh.cs.luc.edu/python/hands-on</a> and find the links to the proper
+                        version of the tutorial and examples.</p>
+                    <p>Once you have the examples.zip archive, you need to extract the files. Make a file browser window
+                        set to the directorywhere you put the zip file. Then</p>
+                    <p><b>Windows</b> Right click on examples.zip, select Extract All. This will create the
+                        folderexamples. End up with afile browser window showing the contents of the examples folder.
+                        This will be yourPython folderin laterdiscussion.</p>
+                    <p><b>Mac</b> Double click on the zip file and the expanded examples folder appears.</p>
+                    <p class="warning-desc">
+                        <b>Warning</b>: On Windows, files in a zip archive can be viewed while they are still in the zip
+                        archive. Modifying andadding files is not so transparent. Be sure that youunzip the
+                        archiveandwork from the regular directorythat holdsthe resulting unzipped files.
+                    </p>
+                    <p>You also have the option of downloading</p>
+                    <ul>
+                        <li>An archive containing the webversion of the tutorial <a
+                                href="http://anh.cs.luc.edu/python/hands-on/3.1/handsonHtml.zip"
+                                target="_blank">http://anh.cs.luc.edu/python/hands-on/3.1/handsonHtml.zip</a> for local
+                            viewing, without the Internet.Download it and unzip as with theexamples. The local file to
+                            open in your browser in in the <strong> handsonHtml</strong> folder you unzipped and the
+                            mainweb page file to open is <strong>calledindex.html</strong>.</li>
+                        <li> The PDF version of thetutorial for printing <a
+                                href="http://anh.cs.luc.edu/python/hands-on/3.1/Hands-onPythonTutorial.pdf"
+                                target="_blank">http://anh.cs.luc.edu/python/hands-on/3.1/Hands-onPythonTutorial.pdf</a>.
+                            Some people also like the typography of this version on the web, too. It is hyperlinked like
+                            html version.</li>
+                    </ul>
+                </article>
+            </section>
+            <section class="main-section" id="Running_A_Sample_Program">
+                <header> Running A Sample Program</header>
+                <article>
+                    <p>This section assumes Python 3 is already on your computer. Windows does not come with Python. (To
+                        load Python see <a class="nav-link" href="#Obtaining_Python_for_Your_Computer"><i>Obtaining
+                                Python for Your Computer</i></a> (page 4).)</p>
+                    <p>Before getting to the individual details of Python, you will run a simple text-based sample
+                        program. Find <strong>madlib.py</strong> in your Python folder, set up in <a class="nav-link"
+                            href="#Your_Python_Folder_and_Python_Examples"><i>Your Python Folder and Python
+                                Examples</i></a>(page 7).</p>
+                    <p class="note-desc"><b>Note</b>: Different keyboards label the key for ending a line differently:
+                        Windows keyboards may use <strong>Enter</strong> while Mac keyboards use
+                        <strong>Return</strong>. The tutorial may intermix instructions to press <strong>Enter</strong>
+                        or press <strong>Return</strong>. They both are intended to mean the key for ending a line.</p>
+                    <p>Options for running the program:</p>
+                    <ul>
+                        <li> If you have trouble with the following options, opening the program in Idle is discussed in
+                            <a class="nav-link" href="#Starting_Idle"><i>Starting Idle</i></a> (page 11).</li>
+                        <li>In Windows, you can display your folder contents, and double click on madlib.py to start the
+                            program</li>
+                        <li>On a Mac, you can Control-click on madlib.py in the Finder, select Open With, and choose the
+                            Python Launcherfor your Python 3 version. When you are done with the program, close the
+                            terminal window.</li>
+                        <li>In Linux you may be able to open a terminal window, change into your Python examples
+                            directory, and enterthe command</li>
+                        <p class="withborder"><strong>python madlib.py</strong></p>
+                        <p>or possibly to distinguish Python 2 and 3:</p>
+                        <p class="withborder"><strong>python3 madlib.py</strong></p>
+                        <p>If neither of these work, get help.</p>
+                    </ul>
+                    <p>Try the program a second time and make different responses.</p>
+                </article>
+            </section>
+            <section class="main-content" id="A_Sample_Program,_Explained">
+                <header>A Sample Program, Explained</header>
+                <article>
+                    <p>If you want to get right to the detailed explanations of writing your own Python, you canskip to
+                        the next section <a class="nav-link" href="#Starting_Idle"><i>Starting Idle</i></a> (page 11).
+                        If you would like an overview of a working program, even if all the explanations do not
+                        maketotal sense yet, read on.</p>
+                    <p>Here is the text of the madlib.py program, followed by line-by-line brief explanations. Do not
+                        worry if you not totallyunderstand the explanations! Try to get the gist now and the details
+                        later. The numbers on the right are not part of theprogram file. They are added for reference in
+                        the comments below:</p>
+                    <code>
+            #! /usr/bin/env python3                                  0
+            '''                                                      1
+            String Substitution for a Mad Lib                        2
+            Adapted from code by Kirby Urner                         3
+            '''                                                      4
+                                                                     5
+            storyFormat = '''                                        6
+            Once upon a time, deep in an ancient jungle,             7
+            there lived a {animal}.  This {animal}                   8
+            liked to eat {food}, but the jungle had                  9
+            very little {food} to offer.  One day, an               10
+            explorer found the {animal} and discovered              11
+            it liked {food}.  The explorer took the                 12
+            {animal} back to {city}, where it could                 13
+            eat as much {food} as it wanted.  However,              14
+            the {animal} became homesick, so the                    15
+            explorer brought it back to the jungle,                 16
+            leaving a large supply of {food}.                       17
+                                                                    18
+            The End                                                 19
+            '''                                                     20
+                                                                    21
+            def tellStory():                                        22
+                userPicks = dict()                                  23
+                addPick('animal', userPicks)                        24
+                addPick('food', userPicks)                          25
+                addPick('city', userPicks)                          26
+                story = storyFormat.format(**userPicks)             27
+                print(story)                                        28
+                                                                    29
+            def addPick(cue, dictionary):                           30
+                '''Prompt for a user response using the cue string, 31
+                and place the cue-response pair in the dictionary.  32
+                '''                                                 33
+                prompt = 'Enter an example for ' + cue + ': '       34
+                response = input(prompt)                            35
+                dictionary[cue] = response                          36
+                                                                    37
+            tellStory()                                             38
+            input('Press Enter to end the program.')                39
+            </code>
+                    <p>Line By Line Explanation</p>
+                    <code>
+            #! /usr/bin/env python3
+          </code>
+                    <p>This is not technically a part of the program. It is there to tell the operating system what
+                        version of Python to choose,since the older Python 2 is incompatible with the newer Python 3. We
+                        will mostly run programs from inside the Idleprogramming environment, where this line is not
+                        needed. To run just by clicking on the program in an operatingsystem window, however, the line
+                        is important if your computer also has Python 2.</p>
+                    <code>
+            '''                                                      1
+            String Substitution for a Mad Lib                        2
+            Adapted from code by Kirby Urner                         3
+            '''                                                      4
+          </code>
+                    <p>1-4: There is multi-line text enclosed in triple quotes. Quoted text is called a<italic>string
+                        </italic>. A string at the very beginning of a program like this is <italic>documentation
+                        </italic> for the file.</p>
+                    <p>5,21,29,37: Blank lines are included for human readability to separate logical parts. The
+                        computer ignores the blanklines.</p>
+                    <code>
+            storyFormat = '''                                        6
+            Once upon a time, deep in an ancient jungle,             7
+            there lived a {animal}.  This {animal}                   8
+            liked to eat {food}, but the jungle had                  9
+            very little {food} to offer.  One day, an               10
+            explorer found the {animal} and discovered              11
+            it liked {food}.  The explorer took the                 12
+            {animal} back to {city}, where it could                 13
+            eat as much {food} as it wanted.  However,              14
+            the {animal} became homesick, so the                    15
+            explorer brought it back to the jungle,                 16
+            leaving a large supply of {food}.                       17
+                                                                    18
+            The End                                                 19
+            '''                                                     20
+          </code>
+                    <p>6: The equal sign tells the computer that this is an <i>assignment statement</i>. The computer
+                        will now associate the value of the expression between the triple quotes, a multi-line
+                        <i>string</i>, with the name on the left, <strong>storyFormat.</strong></p>
+                    <p>7-20: These lines contain the body of the string and the ending triple quotes. This
+                        <strong>storyFormat</strong> string contains some special symbols making it a <i>format
+                            string</i>, unlike the string in lines 1-4. The <strong>storyFormat</strong> string will be
+                        usedlater to provide a format into which substitutions are made. The parts of the string
+                        enclosed in braces are places asubstitute string will be inserted later. The substituted string
+                        will come from a customdictionarythat will contain theuser’s definitions of these words. The
+                        words in the braces: <strong>{animal}</strong>,<strong>{food}</strong>,<strong>{city}</strong>,
+                        indicate that <strong>animal</strong>,<strong>food</strong>, and <strong>city</strong> are words
+                        in a dictionary. This custom dictionary will be created in the program and contain theuser’s
+                        definitions of these words. These user’s definitions will be substituted later in theformat
+                        stringwhere each {...}is currently.</p>
+                    <code>
+                def tellStory():                                        22
+                    userPicks = dict()                                  23
+                    addPick('animal', userPicks)                        24
+                    addPick('food', userPicks)                          25
+                    addPick('city', userPicks)                          26
+                    story = storyFormat.format(**userPicks)             27
+                    print(story)                                        28          
+                </code>
+                    <p>22: <i>def</i> is short for <b>def</b>inition of a function. This line is the heading of a
+                        <b>def</b>inition, which makes the name <strong>tellStory</strong> becomes <b>def</b>ined as a
+                        short way to refer to the sequence of statements that start indented on line 23,and continue
+                        through line 28.</p>
+                    <p>23: The equal sign tells the computer that this is another assignment statement. The computer
+                        will now associate the name <strong>userPicks</strong> with a new empty dictionary created by
+                        the Python code <strong>dict()</strong>.</p>
+                    <p>24-26: <strong>addPick</strong> is the name for a function defined by the sequence of
+                        instructions on lines 29-31, used to add anotherdefinition to a dictionary, based on the user’s
+                        input. The result of these three lines is to add definitions for each of thethree
+                        words<strong>animal</strong>,<strong>food</strong>, and<strong>city</strong> to the dictionary
+                        called <strong>userPicks</strong>.</p>
+                    <p>Assign the name <strong>story</strong> to a string formed by substituting into
+                        <strong>storyFormat</strong> using definitions from the dictio-nary userPicks, to give the
+                        user’s customized story.</p>
+                    <p>28: This is where all the work becomes visible: Print the <strong>story</strong> string to the
+                        screen.</p>
+                    <code>
+            def addPick(cue, dictionary):                           30
+                '''Prompt for a user response using the cue string, 31
+                and place the cue-response pair in the dictionary.  32
+                '''                                                 33
+                prompt = 'Enter an example for ' + cue + ': '       34
+                response = input(prompt)                            35
+                dictionary[cue] = response                          36
+          </code>
+                    <p>30: This line is the heading of a definition, which gives the name <strong>addPick</strong>as a
+                        short way to refer to the se-quence of statements indented on line 34-36. The name
+                        <strong>addPick</strong> is followed by two words in parenthesis,<strong>cue</strong> and
+                        <strong>dictionary</strong>. These two words are associated with an actual cue word and
+                        dictionary given when this definitionis invoked in lines 24-26.</p>
+                    <p>31-33: A documentation comment for the <strong>addPick</strong> definition.</p>
+                    <p>34: The plus sign here is used to concatenate parts of the string assigned to the name
+                        <strong>prompt</strong>. The current value of <strong>cue</strong> is placed into the string.
+                    </p>
+                    <p>35: The right-hand-side of this equal sign causes an interaction with the user, to input text
+                        from the keyboard: Theprompt string is printed to the computer screen, and the computer waits
+                        for the user to enter a line of text. That line oftext then becomes a string inside the program.
+                        This string is assigned to the name <strong>response</strong>.</p>
+                    <p>36: The left-hand-side of the equal sign is a reference to the definition of the cue word in the
+                        dictionary. The wholeline ends up making the definition of the current cue word become the
+                        response typed by the user.</p>
+                    <code>
+            tellStory()                                             38
+            input('Press Enter to end the program.')                39
+          </code>
+                    <p>38: The definition of <strong>tellStory</strong> above does not make the computer do anything
+                        besides <i>remember</i> what the in-struction <strong>tellStory</strong> means. It is only in
+                        this line, with the name, <strong>tellStory</strong>, followed by parentheses, that thewhole
+                        sequence of remembered instructions are actually carried out.</p>
+                    <p>39: This line is only here to accommodate running the program in Windows by double clicking on
+                        its file icon. Withoutthis line, the story would be displayed and then the program would end,
+                        and Windows would make it immediatelydisappear from the screen! This line forces the program to
+                        continue being displayed until there is another responsefrom the user, and meanwhile the user
+                        may look at the output from <strong>tellStory</strong>.</p>
+                </article>
+            </section>
+            <section class="main-content" id="Starting_Idle">
+                <header>Starting Idle</header>
+                <article>
+                    <p>The program that translates Python instructions and then executes them is the <i>Python
+                            interpreter</i>.</p>
+                    <p>This interpreter is embedded in a number of larger programs that make it particularly easy to
+                        develop Python programs.Such a programming environment is <i>Idle</i>, and it is a part of the
+                        standard distribution of Python.</p>
+                    <p>It is possible to open the Idle app directly:</p>
+                    <ul>
+                        <li>Start a search:</li>
+                        <p>Windows: Press the Windows key or go to the start menu.</p>
+                        <p>Mac: open Spotlight (Command-spacebar).</p>
+                        <li>Enter Idle in the search field. Select the Idle app.</li>
+                    </ul>
+                    <p>If you have Linux:</p>
+                    <ul>
+                        <li style="list-style: none;">The approach depends on the installation. In Ubuntu, you should
+                            find Idle in the Programming section ofthe Applications menu. You are better starting idle
+                            from a terminal, with the current directory being yourPython folder. You may need a special
+                            name set up to distinguish idle for versions 2 and 3, for instanceidle3 for version 3.X.
+                        </li>
+                    </ul>
+                    <p>We will discuss later that if you want to edit files, this isnotthe best way to start Idle, since
+                        the associated folder is <i>not</i> the one you want, but it works for now.</p>
+                </article>
+            </section>
+            <section class="main-section" id="Windows_in_Idle">
+                <header>Windows in Idle</header>
+                <article>
+                    <p>Idle has several parts you may choose to display, each with its own window. Depending on the
+                        configuration, Idle canstart up showing either of two windows, an Edit Window or a Python Shell
+                        Window. You are likely to first see an Editwindow, whose top left corner looks something like in
+                        Windows:</p>
+                    <img src="/home/law911012eqw/Pictures/Screenshots/2020-10-31-071002_374x113_scrot.png/2020-10-31-071002_374x113_scrot.png"
+                        alt="Windows Idle" />
+                    <p>For more on the Edit Window, see <i>The Idle Editor and Execution</i>(page 22).</p>
+                    <p>If you see this Edit Window with its Run menu on top, go to the Run menu and choose PYTHON SHELL
+                        to open aPython Shell Window for now. Then you may close the Edit Window. For now we will just
+                        be using the Python Shell.</p>
+                    <p>Either initially, or after explicitly opening it, you should now see the Python Shell window,
+                        with a menu like thefollowing, though the text may be slightly different:</p>
+                    <img src="/home/law911012eqw/Pictures/Screenshots/2020-10-31-072657_349x331_scrot.png"
+                        alt="Windows Idle" />
+                    <p>n the Shell the last line should look like</p>
+                    <code>
+            &gt&gt&gt
+          </code>
+                    <p>The &gt&gt&gt is the <i>prompt</i>, telling you Idle is waiting for<i>you</i> to type something.
+                        Continuing on the same line enter</p>
+                    <code>
+            6+3
+          </code>
+                    <p>Be sure to end with the Enter key. After the Shell responds, you should see something like</p>
+                    <code>
+            &gt&gt&gt 6+3
+            9
+            &gt&gt&gt
+          </code>
+                    <p>The shell evaluates the line you entered, and prints the result. You see Python does arithmetic.
+                        At the end you see afurther prompt <strong>&gt&gt&gt</strong> where you can enter your next
+                        line.... The result line, showing <strong>9</strong>, that is produced by the computer,does not
+                        start with <strong>&gt&gt&gt</strong>.</p>
+                    <p>When we get to whole programs, we will use <i>The Idle Editor and Execution</i>(page 22).</p>
+                </article>
+            </section>
+            <section class="main-content" id="Whirlwind_Introduction_To_Types_and_Functions">
+                <header>Whirlwind Introduction To Types and Functions</header>
+                <article>
+                    <p>Python directly recognizes a variety of types of data. Here are a few:</p>
+                    <ul>
+                        <li style="list-style: none;"><strong>Numbers: 3,6,-7,1.25</strong></li>
+                        <li style="list-style: none;"><strong>’hello’,’The answer is: ’</strong></li>
+                        <li style="list-style: none;"><strong>[1, 2, 3, 4], [’yes’, ’no’, ’maybe’]</strong></li>
+                        <li style="list-style: none;"><strong>None</strong></li>
+                    </ul>
+                    <p>Python has large collection of built-in functions that operate on different kinds of data to
+                        produce all kinds of results.To make a function do its action, parentheses are required. These
+                        parentheses surround the parameter or parameters,as in a function in algebra class.</p>
+                    <p>The general syntax to execute a function is</p>
+                    <ul>
+                        <li style="list-style: none;"><i>functionName (parameters)</i></li>
+                    </ul>
+                    <p>One function is called <strong>type</strong>, and it returns the type of any object. The Python
+                        Shell will evaluate functions. In theShell the last line should look like</p>
+                    <code>
+                   &gt&gt&gt
+                 </code>
+                    <p>Continuing on the same line enter</p>
+                    <code>
+                   type(7)
+                 </code>
+                    <p>Always remember to end with the <strong>Return</strong>(or Enter) key. After the Shell responds,
+                        you should see something like</p>
+                    <code>
+                   &gt&gt&gt type(7)
+                   &ltclass 'int'&gt
+                   &gt&gt&gt</code>
+                    <p>In the result,<strong>int</strong> is the way Python abbreviates integer. The word <i>class</i>
+                        is basically a synonym for type in Python.</p>
+                    <p>Note that the line with the value <i>produced</i> by the shell does not start with
+                        <strong>&gt&gt&gt</strong> and appears at the left margin. Henceyou can distinguish what the
+                        computer responds from what you type (after the <strong>&gt&gt&gt</strong> prompt).</p>
+                    <p>At the end you see a further prompt where you can enter your next line....</p>
+                    <p><i>For the rest of this section</i>, at the <strong>&gt&gt&gt</strong>prompt in the Python
+                        <i>Shell</i>, individually enter each line below that is set off in
+                        <strong>typewriterfont</strong>. So next enter</p>
+                    <code>
+                   type(1.25)
+                 </code>
+                    <p>Note the name in the last result isfloat, not real or decimal, coming from the term “floating
+                        point”, for reasons thatwill be explained later, in <i>Floats, Division, Mixed Types</i>(page
+                        62).</p>
+                    <p>Enter</p>
+                    <code>
+                   type('hello')
+                 </code>
+                    <p>In your last result you see another abbreviation: <strong>str</strong> rather than string. Enter
+                    </p>
+                    <code>
+                   type([1, 2, 3])
+                 </code>
+                    <p>Strings and lists are both sequences of parts (characters or elements). We can find the
+                        <b>length</b> of that sequence withanother function with the abbreviated name
+                        <strong>len</strong>. Try both of the following, separately, in the <i>Shell</i>:</p>
+                    <code>
+                   len([2, 4, 6])
+                   len('abcd')
+                 </code>
+                    <p>Some functions have no parameters, so nothing goes between the parentheses. For example, some
+                        types serve asno-parameter functions to create a simple value of their type. Try</p>
+                    <code>
+                   list()
+                 </code>
+                    <p>You see the way an empty list is displayed.</p>
+                    <p>Functions may also take more than one parameter. Try</p>
+                    <code>
+                   max(5, 11, 2)
+                 </code>
+                    <p>Above, max is short for maximum.</p>
+                    <p>Some of the names of types serve as conversion functions (where there is an obvious meaning for
+                        the conversion). Tryeach of the following, one at a time, in the <i>Shell</i>:</p>
+                    <code>
+                   str(23)
+                   int('125')
+                 </code>
+                    <p>Note the presence and absence of quotes.</p>
+                    <p>An <i>often handy Shell feature</i>: an earlier Shell line may to copied and edited by clicking
+                        anywhere in the previouslydisplayed line and then pressing the <strong>Return</strong>(or Enter)
+                        key. For instance you should have entered several lines startingwith <strong>len</strong>. Click
+                        on any one, press <strong>Return</strong>, and edit the line for a different test.</p>
+                </article>
+            </section>
+            <h1 id="Integer_Arithmetic">Integer Arithmetic</h1>
+            <section class="main-content" id="Addition_and_Subtraction">
+                <header>Addition and Subtraction</header>
+                <article>
+                    <p>We start with the integers and integer arithmetic, not because arithmetic is exciting, but
+                        because the symbolism shouldbe mostly familiar. Of course arithmetic is important in many cases,
+                        but Python is probably more often used tomanipulate text and other sorts of data, as in the
+                        sample program in <a class="nav-link" href="#Running_A_Sample_Program">Running A Sample
+                            Program</a>(page 8).</p>
+                    <p>Python understands numbers and standard arithmetic. <i>For the whole section on integer
+                            arithmetic</i>, where you see a set-off line in <strong>typewriter</strong> font, type
+                        individual lines at the <strong>&gt&gt&gt</strong> prompt in the Python <i>Shell</i>. Press
+                        Enter after eachline to get Python to respond:</p>
+                    <code>
+              77
+              2 + 3
+              5 - 7
+            </code>
+                    <p>Python should evaluate and print back the value of each expression. Of course the first one does
+                        not require anycalculation. It appears that the shell just echoes back what you printed.</p>
+                    <p>The Python Shell is an interactive interpreter. As you can see, after you press
+                        <strong>Return</strong>(or Enter), it is evaluating theexpression you typed in, and then
+                        printing the result automatically. This is a very handy environment to check outsimple Python
+                        syntax and get instant feedback. For more elaborate programs that you want to save, we will
+                        switch toan Editor Window later.</p>
+                </article>
+            </section>
+            <section class="main-section" id="Multiplication,_Parentheses,_and_Precedence">
+                <header>Multiplication, Parentheses, and Precedence</header>
+                <article>
+                    <p>Try in theShell:</p>
+                    <code>
+             2 x 3
+            </code>
+                    <p>You should get your first <i>syntax error</i>. The <strong>x</strong> should have become
+                        highlighted, indicating the location where the Python interpreter discovered that it cannot
+                        understand you: Python does not use <strong>x</strong> for multiplication as you may have done
+                        in grade school. The <strong>x</strong>can be confused with the use of<strong>x</strong>as a
+                        variable (more on that later).</p>
+                    <p>Instead the symbol for multiplication is an asterisk *. Enter each of the following. You may
+                        include spaces or not. ThePython interpreter can figure out what you mean either way. (The space
+                        can make understanding quicker for a humanreader.) Try in the <i>Shell</i>:</p>
+                    <code>
+              2*5
+              2 + 3*4</code>
+                    <p>If you expected the last answer to be 20, think again: Python uses the normal <i>precedence</i>
+                        of arithmetic operations:Multiplications and divisions are done before addition and subtraction,
+                        unless there are parentheses. Try</p>
+                    <code>
+              (2+3)*4
+              2*(4 - 1)
+            </code>
+                    <p>Now try the following in the <i>Shell</i>, exactly as written, followed by
+                        <strong>Enter</strong>, with <i>no</i> closing parenthesis:</p>
+                    <code>
+              5*(2 + 3
+            </code>
+                    <p>Look carefully. There is no answer given at the left margin of the next line and no prompt
+                        <strong>&gt&gt&gt</strong> to start a <i>new</i> expression.If you are using Idle, the cursor
+                        has gone to the next line and has only <i>indented</i> slightly. Python is waiting for you
+                        tofinish your expression. It is smart enough to know that opening parentheses are always
+                        followed by the same numberof closing parentheses. The cursor is on a <i>continuation</i> line.
+                        Type just the matching close-parenthesis and Enter,</p>
+                    <code>
+              )
+            </code>
+                    <p>and you should finally see the expression evaluated. (In some versions of the Python interpreter,
+                        the interpreter puts‘...’ at the beginning of a continuation line, rather than just indenting.)
+                    </p>
+                    <p>Negation also works. Try in the <i>Shell</i>:</p>
+                    <code>
+              -(2 + 3)
+            </code>
+                </article>
+            </section>
+            <section class="main-content" id="Division_and_Remainders">
+                <header>Division and Remainders</header>
+                <article>
+                    <p>If you think about it, you learned several ways to do division. Eventually you learned how to do
+                        division resulting in a decimal. Try in the <i>Shell</i>:</p>
+                    <code>
+              5/2
+              14/4
+            </code>
+                    <p>As you saw in the previous section, numbers with decimal points in them are of type float in
+                        Python. They are discussed more in <i>Floats, Division, Mixed Types</i>(page 62)</p>
+                    <p>In early grade school you would likely say “14 divided by 4 is 3 with a remainder of 2”. The
+                        problem here is thatthe answer is in two parts, the integer quotient 3 and the remainder 2, and
+                        neither of these results is the same as thedecimal result. Python has <i>separate</i> operations
+                        to generate each part. Python uses the doubled division symbol // for the operation that
+                        produces just the integer quotient, and introduces the symbol % for the operation of finding
+                        theremainder. Try each in the <i>Shell</i>:</p>
+                    <code>
+              14/4
+              14//4
+              14%4
+            </code>
+                    <p>Now predict and then try each of</p>
+                    <code>
+              23//5
+              23%5
+              20%5
+              6//8
+              6%8
+              6/8
+            </code>
+                    <p>Finding remainders will prove more useful than you might think in the future!</p>
+                </article>
+            </section>
+            <h1 id="Strings">Strings</h1>
+            <p>Enough with numbers for a while. Strings of characters are another important type in Python.</p>
+            <section class="main-content" id="String_Delimiters">
+                <header>String Delimiters</header>
+                <article>
+                    <p>A string in Python is a sequence of characters. For Python to recognize a sequence of characters,
+                        likehello, as astring, it must be enclosed in quotes to delimit the string.</p>
+                    <p><i>For this whole section on strings</i>, continue trying each set-off line of code in the
+                        <i>Shell</i>. Try</p>
+                    <code>
+              "hello"
+            </code>
+                    <p>Note that the interpreter gives back the string with <i>single</i> quotes. Python does not care
+                        what system you use. Try</p>
+                    <code>
+              'Hi!'
+            </code>
+                    <p>Having the choice of delimiters can be handy.</p>
+                    <p>Figure out how to give Python the string containing the text: <strong>I’m happy.</strong> Try it.
+                        If you got an error, try it withanother type of quotes, and figure out why that one works and
+                        not the first.</p>
+                    <p>There are many variations on delimiting strings and embedding special symbols. We will consider
+                        more ways later in<i>Strings Part II</i>(page 21).</p>
+                    <p class="note-desc"><b>Note</b>: A string can have any number of characters in it, including 0. The
+                        empty string is ’’(two quote characterswith nothing between them). Many beginners forget that
+                        having no characters in the middle is legal. It can be useful.</p>
+                    <p>Strings are a new Python type. Try</p>
+                    <code>
+              type('dog')
+              type('7')
+              type(7)
+            </code>
+                    <p>The last two lines show how easily you can get confused! Strings can include any characters,
+                        <i>including</i> digits. Quotesturn even digits into strings. This will have consequences in the
+                        next section....</p>
+                </article>
+            </section>
+            <section class="main-content" id="String_Concatenation">
+                <header>String Concatenation</header>
+                <article>
+                    <p>Strings also have operation symbols. Try in the <i>Shell</i>(noting the <i>space</i> after
+                        <strong>very</strong>):</p>
+                    <code>
+              'very ' + 'hot'
+            </code>
+                    <p>The plus operation with strings means <i>concatenate</i>the strings. Python looks at the type of
+                        operands before decidingwhat operation is associated with the +.</p>
+                    <p>Think of the relation of addition and multiplication of integers, and then guess the meaning of
+                    </p>
+                    <code>
+              3*'very ' + 'hot'
+            </code>
+                    <p>Were you right? The ability to repeat yourself easily can be handy.</p>
+                    <p>Predict the following and then test. Remember the last section on types:</p>
+                    <code>
+              7+2
+              '7'+'2'
+            </code>
+                    <p>Python checks the types and interprets the plus symbol based on the type. Try</p>
+                    <code>
+              '7'+2
+            </code>
+                    <p>With mixed string and int types, Python sees an ambiguous expression, and does not guess which
+                        you want - it justgives an error!</p>
+                    <p>This is a traceback error. These occur when the code is being executed. In the last two lines of
+                        the traceback it showsthe Python line where the error was found, and then a reason for the
+                        error. Not all reasons are immediately intelligibleto a starting programmer, but they are
+                        certainly worth checking out. In this case it is pretty direct. You need to makean explicit
+                        conversion, so both are strings if you mean concatenation,’7’ + str(2), or so both are int if
+                        you meanaddition,int(’7’) + 2.</p>
+                    <p>With literal strings these examples are only useful for illustration: There is no reason to write
+                        such verbose expressionswhen you already know the intended result. Withvariables, starting in
+                        the next section, expressions involving theseconversions become more important....</p>
+                    <h3>String Exercise</h3>
+                    <p>Figure out a <i>compact</i> way to get Python to make the string,
+                        ’<strong>YesYesYesYesYes</strong>’, and try it. How about
+                        ’<strong>MaybeMaybeMaybeYesYesYesYesYes</strong>’? Hint:</p>
+                </article>
+            </section>
+            <section class="main-content" id="References">
+                <header>References</header>
+                <article>
+                    <p>The contents of this Python documentation are completely borrowed from this <a
+                            href="http://anh.cs.luc.edu/python/hands-on/3.1/Hands-onPythonTutorial.pdf"
+                            target="_blank">pdf</a> file. The purpose of this website is merely for self-study purposes
+                        to learn HTML and CSS. It's a tutorial assigned by freecodecamp.org, that's all.</p>
+                </article>
+            </section>
+        </main>
+    </div>
+</div>
+
+<!-- main content-->
